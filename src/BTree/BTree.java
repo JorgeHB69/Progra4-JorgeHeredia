@@ -1,3 +1,5 @@
+package BTree;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -10,7 +12,7 @@ public class BTree {
         this.root = null;
     }
 
-    // Insert a key into the BTree
+    // Insert a key into the BTree.BTree
     public void insert(int key) {
         if (root == null) {
             // If the tree is empty, create a new root node
@@ -100,7 +102,7 @@ public class BTree {
 
     public String toString() {
         if (root == null) {
-            return "BTree is empty.";
+            return "BTree.BTree is empty.";
         }
 
         StringBuilder sb = new StringBuilder();
