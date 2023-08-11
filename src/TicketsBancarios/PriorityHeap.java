@@ -1,9 +1,10 @@
 package TicketsBancarios;
 
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class PriorityHeap implements ITreeHeap<Client> {
-    public ArrayList<Client> vector;
+    private ArrayList<Client> vector;
     private int size;
 
     public PriorityHeap() {
@@ -112,4 +113,11 @@ public class PriorityHeap implements ITreeHeap<Client> {
         return 0;
     }
 
+    public int getSize() {
+        return size;
+    }
+
+    public ArrayList<Client> getVector() {
+        return vector;
+    }
 }

@@ -1,5 +1,7 @@
 package TicketsBancarios;
 
+import java.util.ArrayList;
+
 public interface ITreeHeap<T> {
     int getParent(int pos);
     int getLeftChild(int pos);
@@ -12,4 +14,6 @@ public interface ITreeHeap<T> {
     void print();
     boolean delete(T element);
     int search(T element);
+    int getSize();
+    ArrayList<T> getVector();
 }

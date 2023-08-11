@@ -18,7 +18,17 @@ public class Bank {
             priorityQueue.insert(new Client(type, normalClientCounter));
         } else {
             vipClientCounter++;
-            priorityQueue.insert(new Client(type, normalClientCounter));
+            priorityQueue.insert(new Client(type, vipClientCounter));
         }
+    }
+
+    public void nextTicket() {
+        StringBuilder sb = new StringBuilder("\t\t---BANK OF AMERICA---\n");
+        sb.append("\tCURRENT TICKET : ").append(priorityQueue.peek()).append("\n");
+
+        sb.append("\tNEXT TICKET : ").append(priorityQueue.getVector().get(1)).append("\n");
+        sb.append("\tON QUEUE : ").append(priorityQueue.getSize()).append("\n");
+
+        System.out.println(sb);
     }
 }
