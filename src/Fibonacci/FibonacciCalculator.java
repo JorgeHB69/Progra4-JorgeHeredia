@@ -11,7 +11,7 @@ public class FibonacciCalculator {
             previousNumber = currentNumber;
             currentNumber = nextNumber;
             counter++;
-            product = product + nextNumber;
+            product = product * nextNumber;
         }
         return product;
     }
