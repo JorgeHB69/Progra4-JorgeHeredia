@@ -98,6 +98,7 @@ public class BTree {
         // Update the number of keys in the nodes
         childNode.setNumKeys((order/2) - 1);
         newNode.setNumKeys((order/2) - 1);
+        //newNode.set
     }
 
     public String toString() {
