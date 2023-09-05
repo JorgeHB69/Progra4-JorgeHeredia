@@ -6,7 +6,7 @@ public class FibonacciCalculator {
         long product = 1;
         long currentNumber = 1;
         long previousNumber = currentNumber;
-        while (counter <= numbersOfFibonacci) {
+        while (counter < numbersOfFibonacci) {
             long nextNumber = previousNumber + currentNumber;
             previousNumber = currentNumber;
             currentNumber = nextNumber;
