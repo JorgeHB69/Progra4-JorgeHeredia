@@ -38,15 +38,16 @@ public class Main {
         }
         executor.shutdown();
 
-        for (int i = 0; i < cores; i++) {
+        for (int i = 0; i < results.size(); i++) {
             FutureTask<Integer> res = results.get(i);
             try {
                 result += res.get();
-                progress += (100.0/cores);
+                progress += (100.0/results.size());
                 System.out.println("Progress: " + progress + "%");
             } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
         }
+        System.out.println(result);
     }
 }
