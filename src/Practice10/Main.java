@@ -39,7 +39,7 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             Future<Integer> res = results.get(i);
             try {
-                System.out.print(res.get() + "-");
+                System.out.print(res.get() + " - ");
             } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
             }
